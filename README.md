@@ -1,4 +1,4 @@
-syllabus
+Syllabus
 ========
 
-Course Syllabus 
+# Course Syllabus 
