@@ -1000,10 +1000,381 @@ body .markdown-body
   }
 }
 </style><title>README</title></head><body><article class="markdown-body"><h1 id="course-overview"><a name="user-content-course-overview" href="#course-overview" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Course Overview</h1>
-<p>Introductory to computer security. Covers security issues in software design and development from technical, social and legal viewpoints. Topics include cryptography, security models, software security, authentication, authorization, and system security.<br />
-<strong>Course Time:</strong>    Tuesday, Thursday 2:00pm-3:00pm<br />
+<p>Introductory to computer security. Covers security issues in software design and development from technical, social and legal viewpoints. Topics include cryptography, security models, software security, authentication, authorization, and system security.</p>
+<p><strong>Course Time:</strong>    Tuesday, Thursday 2:00pm-3:00pm<br />
 <strong>Course Location:</strong>    [unknown]<br />
 <strong>Course Instructor:</strong>  Eric Fulton. Office Hours: Wednesday immediate after class until 5pm<br />
 <strong>Prerequisites:</strong>  CSCI 232<br />
 <strong>Number of credits:</strong>  3<br />
-<strong>Required Textbook:</strong>  None</p></article></body></html>
+<strong>Required Textbook:</strong>  None</p>
+<h2 id="goals"><a name="user-content-goals" href="#goals" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Goals</h2>
+<p>aaa</p>
+<h2 id="topics-to-be-covered"><a name="user-content-topics-to-be-covered" href="#topics-to-be-covered" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Topics to be covered</h2>
+<ul>
+<li>Applied cryptography</li>
+<li>Security Models</li>
+<li>System Security</li>
+<li>Network Security</li>
+<li>Authenication and Authorization</li>
+<li>Hacker Culture</li>
+</ul>
+<h1 id="grading-and-policies"><a name="user-content-grading-and-policies" href="#grading-and-policies" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Grading and Policies</h1>
+<h2 id="grading"><a name="user-content-grading" href="#grading" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Grading</h2>
+<p>The following grade scale will be used, after any curving takes place, based on class average as follows:</p>
+<p>89.5 - 100: A<br />
+79.5 - 89.4: B<br />
+69.5 - 79.4: C<br />
+59.5 - 69.4: D<br />
+&lt; 59.5: F</p>
+<h2 id="graded-items"><a name="user-content-graded-items" href="#graded-items" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Graded Items</h2>
+<ul>
+<li>Practicum 1 - %15</li>
+<li>Practicum 2 - %15</li>
+<li>Practicum 3 - %20</li>
+<li>Assignments - %50 (%5 each)</li>
+</ul>
+<p>Late homework is not accepted, as staff cannot hand out solutions or graded assignements until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  </p>
+<h2 id="homework-style-guide"><a name="user-content-homework-style-guide" href="#homework-style-guide" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Homework Style Guide</h2>
+<h2 id="policies"><a name="user-content-policies" href="#policies" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Policies</h2>
+<p>All students should read the MSU Student Conduct Code.  </p>
+<p>Due to the nature of this class and the skills being taught an additional ethics document will need to be signed and returned at the beginning of the second class for a student to continue enrollment in CSCI 491.  Unethical behaviour including cheating, plagiarism, unlawful access of computer systems, et al. will immediately result in a class failure and the incident will be reported to the Dean of Students.  </p>
+<p>When it comes to homework assignements, you <em>MAY</em>:</p>
+<ul>
+<li>Work with other people on your team if allowed. </li>
+<li>Share ideas with people in other teams</li>
+<li>Help other teams troubleshoot problems.</li>
+</ul>
+<p>You <em>MAY NOT</em>:</p>
+<ul>
+<li>Share code you write with other teams</li>
+<li>Submit code that someone on your team did not write.</li>
+<li>Modify another teams solution or code found online and claim it as your own.</li>
+</ul>
+<p>Failure to abide by these rules will result in at &ldquo;F&rdquo; for the course and being reported to the Dean of Students.  Please ask if you have any questions regarding your actions. In particular:</p>
+<ul>
+<li>Don&rsquo;t break laws or University rules. Examples of prohibited activities include network scanning, network exploitation, &ldquo;testing&rdquo; the security of a system without explicit permission from all necessary parties, etc.</li>
+<li>Don&rsquo;t attempt to hack the University.  You won&rsquo;t realize you&rsquo;re being watched until you&rsquo;re being sent to jail.</li>
+</ul>
+<h1 id="general-course-materials"><a name="user-content-general-course-materials" href="#general-course-materials" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>General Course Materials</h1>
+<p>There are some basic competencies necessary to be successful in this course.  By no means must you be an expert in the following topics, but it would be useful to have a general familiarity.  A weekend review of the following toipcs will give you the basic tools to necessary to succeed.  </p>
+<h2 id="basic-computer-systems"><a name="user-content-basic-computer-systems" href="#basic-computer-systems" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Basic Computer Systems</h2>
+<p><a href="http://www.simplecpu.com/Binary.html">Simple CPU</a><br />
+<a href="http://phrack.org/issues/49/14.html">Smash the Stack for Fun and Profit</a><br />
+<a href="http://daringfireball.net/projects/markdown/syntax">Markdown Syntax</a></p>
+<h2 id="nix-knowledge"><a name="user-content-nix-knowledge" href="#nix-knowledge" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>*Nix Knowledge</h2>
+<p>Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following tools:</p>
+<p><a href="http://linuxcommand.org/index.php">Linux Command</a><br />
+<a href="http://ryanstutorials.net/linuxtutorial/">Linux Tutorial</a><br />
+<a href="http://www.ibm.com/developerworks/linux/library/l-bash/index.html">Bash by Example</a><br />
+<a href="http://www.shell-fu.org/lister.php?top">Shell-Fu</a><br />
+<a href="http://explainshell.com/">Explain Shell</a></p>
+<h2 id="networking-knowledge"><a name="user-content-networking-knowledge" href="#networking-knowledge" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Networking Knowledge</h2>
+<h2 id="scripting-competency"><a name="user-content-scripting-competency" href="#scripting-competency" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Scripting Competency</h2>
+<h2 id="hardware-and-software-requirements"><a name="user-content-hardware-and-software-requirements" href="#hardware-and-software-requirements" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Hardware and software requirements</h2>
+<h1 id="schedule"><a name="user-content-schedule" href="#schedule" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Schedule</h1>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Topic</th>
+<th>Graded Events</th>
+<th>Extra Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.15.15</td>
+<td>Course Introduction</td>
+<td>Assignment 1</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.20.15</td>
+<td>&mdash;</td>
+<td>Assignment 2</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>1.22.15</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.27.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.29.15</td>
+<td>&mdash;</td>
+<td>Assignment 3</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.3.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.5.15</td>
+<td>&mdash;</td>
+<td>Practicum 1</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.10.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.12.15</td>
+<td>&mdash;</td>
+<td>Assignment 4</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.17.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.19.15</td>
+<td>&mdash;</td>
+<td>Assignment 5</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.24.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.26.15</td>
+<td>&mdash;</td>
+<td>Assignment 6</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.3.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.5.15</td>
+<td>&mdash;</td>
+<td>Practicum 2</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.10.15</td>
+<td><strong>Spring Break</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.12.15</td>
+<td><strong>Spring Break</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.17.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.19.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.24.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.26.15</td>
+<td>&mdash;</td>
+<td>Assignment 7</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3.31.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.2.15</td>
+<td>&mdash;</td>
+<td>Assignment 8</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.7.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.9.15</td>
+<td>&mdash;</td>
+<td>Assignment 9</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.14.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.16.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.21.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.23.15</td>
+<td>&mdash;</td>
+<td>Assignment 10</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.28.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4.30.15</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5.4.15</td>
+<td><strong>Finals Week</strong></td>
+<td>Practicum 3</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>5.8.15</td>
+<td><strong>Spring Semester Ends</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></article></body></html>
