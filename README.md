@@ -38,7 +38,7 @@ The following grade scale will be used, after any curving takes place, based on 
 Late homework is not accepted, as staff cannot hand out solutions or graded assignements until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  
 
 ## Homework Style Guide
-
+All written homework assignments are to be written in the [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax).  
 
 ## Policies
 
@@ -70,7 +70,7 @@ There are some basic competencies necessary to be successful in this course.  By
 
 [Simple CPU](http://www.simplecpu.com/Binary.html)
 [Smash the Stack for Fun and Profit](http://phrack.org/issues/49/14.html)
-[Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
+
 
 ## *Nix Knowledge
 Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following tools:
@@ -84,7 +84,10 @@ Linux is the most typically used *nix operating system in use today and will be 
 
 ## Networking Knowledge
 
+[TCP/IP Illustrated](http://en.wikipedia.org/wiki/TCP/IP_Illustrated)
+[IP Addressing and Subnetting for New Users](http://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
 
+	
 ## Scripting Competency
 
 
