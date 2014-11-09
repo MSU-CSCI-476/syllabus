@@ -154,21 +154,21 @@ Date | Topic | Graded Events | Extra Reading
 
 
 # Misc Resources
-[CTF Field Guide](https://trailofbits.github.io/ctf/)
-[CTF Time](https://ctftime.org/)
-[Windows Security Defenses](http://msdn.microsoft.com/en-us/library/bb430720.aspx)
-[Common Network Attacks](http://technet.microsoft.com/en-us/library/cc959354.aspx)
-[PicoCTF Learning Materials](https://picoctf.com/learn)
-[DGuido's Videos](http://vimeo.com/dguido)
+* [CTF Field Guide](https://trailofbits.github.io/ctf/)
+* [CTF Time](https://ctftime.org/)
+* [Windows Security Defenses](http://msdn.microsoft.com/en-us/library/bb430720.aspx)
+* [Common Network Attacks](http://technet.microsoft.com/en-us/library/cc959354.aspx)
+* [PicoCTF Learning Materials](https://picoctf.com/learn)
+* [DGuido's Videos](http://vimeo.com/dguido)
 
 
 ## Reverse Engineering
-[Xeno Kovah's Introductory Intel x86](http://opensecuritytraining.info/IntroX86.html)
-[Xeno Kovah's Intermediate Intel x86](http://opensecuritytraining.info/IntermediateX86.html)
-[Xeno Kovah's The Life of Binaries](http://opensecuritytraining.info/LifeOfBinaries.html)
-[Binary Auditing Games](http://www.binary-auditing.com/)
-[SEED Developing Labs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
-[Open Training Info](http://opensecuritytraining.info/Training.html)
+* [Xeno Kovah's Introductory Intel x86](http://opensecuritytraining.info/IntroX86.html)
+* [Xeno Kovah's Intermediate Intel x86](http://opensecuritytraining.info/IntermediateX86.html)
+* [Xeno Kovah's The Life of Binaries](http://opensecuritytraining.info/LifeOfBinaries.html)
+* [Binary Auditing Games](http://www.binary-auditing.com/)
+* [SEED Developing Labs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
+* [Open Training Info](http://opensecuritytraining.info/Training.html)
 
 
 
