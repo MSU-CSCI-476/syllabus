@@ -114,52 +114,36 @@ Your primary platform will be [Kali Linux](http://www.kali.org/downloads/).  You
 Date | Topic | Graded Events | Extra Reading
 --- | --- | --- | ---
 1.15.15 | Course Introduction | Assignment 1 | ---
----
 1.20.15 |  |  Assignment 2 | ---
 1.22.15 | --- | --- | ---
----
 1.27.15 |
 1.29.15 | --- |  Assignment 3 | ---
----
 2.3.15 |
 2.5.15 | --- |  Practicum 1 | ---
----
 2.10.15 |
 2.12.15 | --- |  Assignment 4 | ---
----
 2.17.15 |
 2.19.15 | --- |  Assignment 5 | ---
----
 2.24.15 |
 2.26.15 | --- |  Assignment 6 | ---
----
 3.3.15 |
 3.5.15 | --- |  Practicum 2 | ---
----
 3.10.15 | **Spring Break**
 3.12.15 | **Spring Break**
----
 3.17.15 |
 3.19.15 |
----
 3.24.15 |
 3.26.15 | --- |  Assignment 7 | ---
----
 3.31.15 |
 4.2.15 | --- |  Assignment 8 | ---
----
 4.7.15 |
 4.9.15 | --- |  Assignment 9 | ---
----
 4.14.15 |
 4.16.15 |
----
 4.21.15 |
 4.23.15 | --- |  Assignment 10 | ---
----
 4.28.15 |
 4.30.15 |
----
 5.4.15 | **Finals Week** |  Practicum 3 | ---
 5.8.15 | **Spring Semester Ends**
 
