@@ -163,12 +163,12 @@ Date | Topic | Graded Events | Extra Reading
 
 
 ## Reverse Engineering
-* [Xeno Kovah's Introductory Intel x86](http://opensecuritytraining.info/IntroX86.html)
-* [Xeno Kovah's Intermediate Intel x86](http://opensecuritytraining.info/IntermediateX86.html)
-* [Xeno Kovah's The Life of Binaries](http://opensecuritytraining.info/LifeOfBinaries.html)
-* [Binary Auditing Games](http://www.binary-auditing.com/)
-* [SEED Developing Labs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
-* [Open Training Info](http://opensecuritytraining.info/Training.html)
+[Xeno Kovah's Introductory Intel x86](http://opensecuritytraining.info/IntroX86.html) \n
+[Xeno Kovah's Intermediate Intel x86](http://opensecuritytraining.info/IntermediateX86.html) \n
+[Xeno Kovah's The Life of Binaries](http://opensecuritytraining.info/LifeOfBinaries.html)
+[Binary Auditing Games](http://www.binary-auditing.com/)
+[SEED Developing Labs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
+[Open Training Info](http://opensecuritytraining.info/Training.html)
 
 
 
