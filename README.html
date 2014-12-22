@@ -133,7 +133,7 @@ body .markdown-body
 }
 
 .markdown-body .codehilitetable pre,
-.markdown-body div.codehilite {
+.markdown-body .codehilitetable div.codehilite {
   margin: 0;
 }
 
@@ -583,16 +583,11 @@ body .markdown-body
 .markdown-body .admonition {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  position: relative;
   border-radius: 3px;
-  padding: 0.5em 1em 0.5em 1em;
-  color: #888888;
-  background-color: #F7F7F7;
-  border: 1px solid #888888;
-}
-
-.markdown-body .admonition blockquote {
-  color: rgba(136, 136, 136, 0.5);
-  border-left: 4px solid rgba(136, 136, 136, 0.5);
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
 }
 
 .markdown-body .admonition table {
@@ -601,7 +596,6 @@ body .markdown-body
 
 .markdown-body .admonition p {
   padding: 0;
-  margin: 0;
 }
 
 .markdown-body .admonition-title {
@@ -609,110 +603,125 @@ body .markdown-body
   margin: 0;
 }
 
-.markdown-body .admonition-icon {
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
   font: normal normal 16px fontawesome-mini;
-  line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  float: left;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
 }
 
 .markdown-body .attention {
-  color: #4F8A10;
-  background-color: #DFF2BF;
-  border: 1px solid #4F8A10;
+  border-left: 6px solid #a6d796;
 }
 
 .markdown-body .caution {
-  color: #D63301;
-  background-color: #FFCCBA;
-  border: 1px solid #D63301;
+  border-left: 6px solid #d7a796;
 }
 
 .markdown-body .hint {
-  color: #00529B;
-  background-color: #BDE5F8;
-  border: 1px solid #00529B;
+  border-left: 6px solid #96c6d7;
 }
 
 .markdown-body .danger {
-  color: #D8000C;
-  background-color: #FFBABA;
-  border: 1px solid #D8000C;
+  border-left: 6px solid #c25f77;
 }
 
 .markdown-body .question {
-  color: #00049b;
-  background-color: #BDC8F8;
-  border: 1px solid #00049b;
+  border-left: 6px solid #96a6d7;
 }
 
 .markdown-body .note {
-  color: #9F6000;
-  background-color: #FEEFB3;
-  border: 1px solid #9F6000;
+  border-left: 6px solid #d7c896;
 }
 
-.markdown-body .attention {
-  color: #4F8A10;
-  background-color: #DFF2BF;
-  border: 1px solid #4F8A10;
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
 }
 
-.markdown-body .caution blockquote {
-  color: rgba(214, 51, 1, .5);
-  border-left: 4px solid rgba(214, 51, 1, .5);
-}
-
-.markdown-body .hint blockquote {
-  color: rgba(0, 82, 155, .5);
-  border-left: 4px solid rgba(0, 82, 155, .5);
-}
-
-.markdown-body .danger blockquote {
-  color: rgba(216, 0, 12, .5);
-  border-left: 4px solid rgba(216, 0, 12, .5);
-}
-
-.markdown-body .question blockquote {
-  color: rgba(0, 4, 155, .5);
-  border-left: 4px solid rgba(0, 4, 155, .5);;
-}
-
-.markdown-body .note blockquote {
-  color: rgba(159, 96, 0, .5);
-  border-left: 4px solid rgba(159, 96, 0, .5);
-}
-
-.markdown-body .admonition-icon:before {
-  content: "\f040\00a0";
-}
-
-.markdown-body .attention > .admonition-icon:before {
-  content: "\f058\00a0";
-}
-
-.markdown-body .caution > .admonition-icon:before {
-  content: "\f06a\00a0";
-}
-
-.markdown-body .hint > .admonition-icon:before {
-  content: "\f05a\00a0";
-}
-
-.markdown-body .danger > .admonition-icon:before {
-  content: "\f056\00a0";
-}
-
-.markdown-body .question > .admonition-icon:before {
-  content: "\f059\00a0";
-}
-
-.markdown-body .note > .admonition-icon:before {
-  content: "\f040\00a0";
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
 }
 
 /* progress bar*/
@@ -721,11 +730,10 @@ body .markdown-body
   width: 300px;
   margin: 10px 0;
   height: 24px;
-  border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #F8F8F8;
+  background-color: #ededed;
   position: relative;
   box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
 }
@@ -746,81 +754,71 @@ body .markdown-body
 .markdown-body .progress-bar {
   height: 24px;
   float: left;
-  border-right: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #34c2e3;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5);
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
   background-size: 30px 30px;
   background-image: -webkit-linear-gradient(
     135deg, rgba(255, 255, 255, .4) 27%,
     transparent 27%,
-    transparent 53%, rgba(255, 255, 255, .4) 53%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
     rgba(255, 255, 255, .4) 77%,
     transparent 77%, transparent
   );
   background-image: -moz-linear-gradient(
     135deg,
     rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 53%, rgba(255, 255, 255, .4) 53%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
     rgba(255, 255, 255, .4) 77%, transparent 77%,
     transparent
   );
   background-image: -ms-linear-gradient(
     135deg,
     rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 53%, rgba(255, 255, 255, .4) 53%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
     rgba(255, 255, 255, .4) 77%, transparent 77%,
     transparent
   );
   background-image: -o-linear-gradient(
     135deg,
     rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 53%, rgba(255, 255, 255, .4) 53%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
     rgba(255, 255, 255, .4) 77%, transparent 77%,
     transparent
   );
   background-image: linear-gradient(
     135deg,
     rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 53%, rgba(255, 255, 255, .4) 53%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
     rgba(255, 255, 255, .4) 77%, transparent 77%,
     transparent
   );
 }
 
 .markdown-body .progress-100plus .progress-bar {
-  background-color: #1ee038;
+  background-color: #a6d796;
 }
 
 .markdown-body .progress-80plus .progress-bar {
-  background-color: #86e01e;
+  background-color: #c6d796;
 }
 
 .markdown-body .progress-60plus .progress-bar {
-  background-color: #f2d31b;
+  background-color: #d7c896;
 }
 
 .markdown-body .progress-40plus .progress-bar {
-  background-color: #f2b01e;
+  background-color: #d7a796;
 }
 
 .markdown-body .progress-20plus .progress-bar {
-  background-color: #f27011;
+  background-color: #d796a6;
 }
 
 .markdown-body .progress-0plus .progress-bar {
-  background-color: #f63a0f;
-}
-
-.markdown-body .gloss .progress-bar {
-  box-shadow:
-    inset -1px 1px 0 rgba(255, 255, 255, .5),
-    inset 0 -4px 12px rgba(255, 255, 255, .7),
-    inset 0 4px 12px rgba(255, 255, 255, .7),
-    inset 0 -12px 0 rgba(0, 0, 0, .05),
-    inset 1px -1px 0 rgba(255, 255, 255, .2);
+  background-color: #c25f77;
 }
 
 .markdown-body .candystripe-animate .progress-bar{
@@ -857,6 +855,12 @@ body .markdown-body
   100% {
     background-position: 60px 0;
   }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
 }
 
 /* Multimarkdown Critic Blocks */
@@ -975,7 +979,18 @@ body .markdown-body
 
   .markdown-body .progress,
   .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
   }
 
   .markdown-body tr,
@@ -999,24 +1014,57 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="course-overview"><a name="user-content-course-overview" href="#course-overview" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Course Overview</h1>
+</style><title>README</title></head><body><article class="markdown-body"><h1 id="course-overview"><a name="user-content-course-overview" href="#course-overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Course Overview</h1>
 <p>Introductory to computer security. Covers security issues in software design and development from technical, social and legal viewpoints. Topics include cryptography, security models, software security, authentication, authorization, and system security.</p>
-<p><strong>Course Time:</strong>    Tuesday, Thursday 2:00pm-3:00pm<br />
-<strong>Course Location:</strong>    [unknown]<br />
-<strong>Course Instructor:</strong>  Eric Fulton. Office Hours: Wednesday immediate after class until 5pm<br />
-<strong>Prerequisites:</strong>  CSCI 232<br />
-<strong>Number of credits:</strong>  3<br />
-<strong>Required Textbook:</strong>  None</p>
-<h2 id="goals"><a name="user-content-goals" href="#goals" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Goals</h2>
-<p>aaa</p>
-<h2 id="topics-to-be-covered"><a name="user-content-topics-to-be-covered" href="#topics-to-be-covered" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Topics to be covered</h2>
+<p><strong>Course Time:</strong>    Tuesday, Thursday 2:00pm-3:00pm</p>
+<p><strong>Course Location:</strong>    [unknown]</p>
+<p><strong>Course Instructor:</strong>  Eric Fulton. Office Hours: Thursday immediate after class until 5pm</p>
+<p><strong>Prerequisites:</strong>  CSCI 232</p>
+<p><strong>Number of credits:</strong>  3</p>
+<p><strong>Required Textbook:</strong>  None</p>
+<h2 id="goals"><a name="user-content-goals" href="#goals" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Goals</h2>
+<p>The overarching goals fo the class are:</p>
+<ol>
+<li>Understand the many different aspects of information security.</li>
+<li>Develop Skills for: researching security issues, learning new tools, developing new tools, and more.</li>
+<li>Practice offensive security techniques.</li>
+<li>Acquire basic knowledge of various information security topics.  </li>
+<li></li>
+<li>Question and evaluate information presented </li>
+</ol>
+<p>By the end of the class, you will have acquited the following skills: </p>
+<ol>
+<li>Perform a penetration test from beginning to end</li>
+<li>Discuss and describe basic hacking techniques</li>
+<li>Identify and recongnize exploitable situations and logically attempt to exploit flaws</li>
+<li>Write a report on </li>
+<li>Formulate and execute an independent project to examine in depth a topic on coastal contaminants</li>
+<li>Write a research paper containing novel data analysis</li>
+<li>Present orally the results of an independent project</li>
+<li>Translate and restate scientific results presented in peer-reviewed journals</li>
+</ol>
+<h2 id="topics-to-be-covered"><a name="user-content-topics-to-be-covered" href="#topics-to-be-covered" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Topics to be covered</h2>
 <ul>
+<li>Hacking<ul>
+<li>Trust, Security Domains, Common Attacks</li>
+<li>Information Gathering</li>
+<li>Vulnerability Analysis and Scanning</li>
+<li>Exploitation</li>
+<li>Post-Exploitation and Persistence</li>
+</ul>
+</li>
 <li>Applied cryptography<ul>
 <li>Goals of Crypto</li>
 <li>Stream Cyphers</li>
 <li>Block Cyphers</li>
 <li>Asymmetric Crypto</li>
 <li>Authentication/Integrity</li>
+</ul>
+</li>
+<li>Hacker Culture</li>
+<li>Reverse Engineering</li>
+<li>Web Application Security<ul>
+<li>OWASP Top 10</li>
 </ul>
 </li>
 <li>System Security<ul>
@@ -1029,37 +1077,77 @@ body .markdown-body
 </ul>
 </li>
 <li>Network Security<ul>
-<li>Scanning, firewalls, and vuln scanning </li>
+<li>Scanning, firewalls, and vulnerability scanning </li>
 <li>Denial of Service</li>
 <li>Intrusion Detection</li>
 <li>Network analysis</li>
 </ul>
 </li>
-<li>Web Application Security<ul>
-<li>OWASP Top 10</li>
 </ul>
-</li>
-<li>Hacker Culture</li>
-</ul>
-<h1 id="grading-and-policies"><a name="user-content-grading-and-policies" href="#grading-and-policies" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Grading and Policies</h1>
-<h2 id="grading"><a name="user-content-grading" href="#grading" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Grading</h2>
+<h1 id="grading-and-policies"><a name="user-content-grading-and-policies" href="#grading-and-policies" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Grading and Policies</h1>
+<h2 id="grading"><a name="user-content-grading" href="#grading" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Grading</h2>
 <p>The following grade scale will be used, after any curving takes place, based on class average as follows:</p>
-<p>89.5 - 100: A<br />
-79.5 - 89.4: B<br />
-69.5 - 79.4: C<br />
-59.5 - 69.4: D<br />
-&lt; 59.5: F</p>
-<h2 id="graded-items"><a name="user-content-graded-items" href="#graded-items" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Graded Items</h2>
-<ul>
-<li>Practicum 1 - %15</li>
-<li>Practicum 2 - %15</li>
-<li>Practicum 3 - %20</li>
-<li>Assignments - %50 (%5 each)</li>
-</ul>
-<p>Late homework is not accepted, as staff cannot hand out solutions or graded assignements until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  </p>
-<h2 id="homework-style-guide"><a name="user-content-homework-style-guide" href="#homework-style-guide" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Homework Style Guide</h2>
-<p>All written homework assignments are to be written in the <a href="http://daringfireball.net/projects/markdown/syntax">Markdown Syntax</a>.  </p>
-<h2 id="policies"><a name="user-content-policies" href="#policies" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Policies</h2>
+<table>
+<thead>
+<tr>
+<th>Percentage</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>89.5 - 100:</td>
+<td>A</td>
+</tr>
+<tr>
+<td>79.5 - 89.4:</td>
+<td>B</td>
+</tr>
+<tr>
+<td>69.5 - 79.4:</td>
+<td>C</td>
+</tr>
+<tr>
+<td>59.5 - 69.4:</td>
+<td>D</td>
+</tr>
+<tr>
+<td>&lt; 59.5:</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="graded-items"><a name="user-content-graded-items" href="#graded-items" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Graded Items</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Percentage of Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Practicum 1</td>
+<td>%15</td>
+</tr>
+<tr>
+<td>Practicum 2</td>
+<td>%15</td>
+</tr>
+<tr>
+<td>Practicum 3</td>
+<td>%20</td>
+</tr>
+<tr>
+<td>Assignments</td>
+<td>%50 (5 percent each)</td>
+</tr>
+</tbody>
+</table>
+<p>Late homework is not accepted as staff cannot hand out solutions or graded assignments until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  </p>
+<h2 id="homework-style-guide"><a name="user-content-homework-style-guide" href="#homework-style-guide" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Homework Style Guide</h2>
+<p>All written homework assignments are to be written in the <a href="https://help.github.com/articles/github-flavored-markdown/">Markdown Syntax</a>.  </p>
+<h2 id="policies"><a name="user-content-policies" href="#policies" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Policies</h2>
 <p>All students should read the MSU Student Conduct Code.  </p>
 <p>Due to the nature of this class and the skills being taught an additional ethics document will need to be signed and returned at the beginning of the second class for a student to continue enrollment in CSCI 491.  Unethical behaviour including cheating, plagiarism, unlawful access of computer systems, et al. will immediately result in a class failure and the incident will be reported to the Dean of Students.  </p>
 <p>When it comes to homework assignments, you <em>MAY</em>:</p>
@@ -1067,6 +1155,7 @@ body .markdown-body
 <li>Work with other people on your team if allowed. </li>
 <li>Share ideas with people in other teams</li>
 <li>Help other teams troubleshoot problems.</li>
+<li>Use the power of the Internet</li>
 </ul>
 <p>You <em>MAY NOT</em>:</p>
 <ul>
@@ -1076,30 +1165,40 @@ body .markdown-body
 </ul>
 <p>Failure to abide by these rules will result in at &ldquo;F&rdquo; for the course and being reported to the Dean of Students.  Please ask if you have any questions regarding your actions. In particular:</p>
 <ul>
-<li>Don&rsquo;t break laws or University rules. Examples of prohibited activities include network scanning, network exploitation, &ldquo;testing&rdquo; the security of a system without explicit permission from all necessary parties, etc.</li>
+<li>Don&rsquo;t break University rules or laws. Examples of prohibited activities include network scanning, network exploitation, &ldquo;testing&rdquo; the security of a system without explicit permission from all necessary parties, etc.</li>
 <li>Don&rsquo;t attempt to hack the University.  You won&rsquo;t realize you&rsquo;re being watched until you&rsquo;re being sent to jail.</li>
 </ul>
-<h1 id="general-course-materials"><a name="user-content-general-course-materials" href="#general-course-materials" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>General Course Materials</h1>
+<h1 id="general-course-knowledge-requirements"><a name="user-content-general-course-knowledge-requirements" href="#general-course-knowledge-requirements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>General Course Knowledge Requirements</h1>
 <p>There are some basic competencies necessary to be successful in this course.  By no means must you be an expert in the following topics, but it would be useful to have a general familiarity.  A weekend review of the following topics will give you the basic tools to necessary to succeed.  </p>
-<h2 id="basic-computer-systems"><a name="user-content-basic-computer-systems" href="#basic-computer-systems" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Basic Computer Systems</h2>
-<p><a href="http://www.simplecpu.com/Binary.html">Simple CPU</a></p>
-<h2 id="nix-knowledge"><a name="user-content-nix-knowledge" href="#nix-knowledge" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>*Nix Knowledge</h2>
-<p>Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following tools:</p>
-<p><a href="http://linuxcommand.org/index.php">Linux Command</a><br />
-<a href="http://ryanstutorials.net/linuxtutorial/">Linux Tutorial</a><br />
-<a href="http://www.ibm.com/developerworks/linux/library/l-bash/index.html">Bash by Example</a><br />
-<a href="http://www.shell-fu.org/lister.php?top">Shell-Fu</a><br />
-<a href="http://explainshell.com/">Explain Shell</a></p>
-<h2 id="networking-knowledge"><a name="user-content-networking-knowledge" href="#networking-knowledge" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Networking Knowledge</h2>
-<p><a href="http://en.wikipedia.org/wiki/TCP/IP_Illustrated">TCP/IP Illustrated</a><br />
-<a href="http://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html">IP Addressing and Subnetting for New Users</a></p>
-<h2 id="scripting-competency"><a name="user-content-scripting-competency" href="#scripting-competency" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Scripting Competency</h2>
-<p><a href="http://tldp.org/LDP/abs/html/">Bash</a><br />
-<a href="http://www.codecademy.com/en/tracks/ruby">Ruby</a><br />
-<a href="http://www.codecademy.com/en/tracks/python">Python</a></p>
-<h2 id="hardware-and-software-requirements"><a name="user-content-hardware-and-software-requirements" href="#hardware-and-software-requirements" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Hardware and software requirements</h2>
+<h2 id="basic-computer-systems"><a name="user-content-basic-computer-systems" href="#basic-computer-systems" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Basic Computer Systems</h2>
+<ul>
+<li><a href="http://www.simplecpu.com/Binary.html">Simple CPU</a></li>
+</ul>
+<h2 id="nix-knowledge"><a name="user-content-nix-knowledge" href="#nix-knowledge" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>*Nix Knowledge</h2>
+<p>Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following resources:</p>
+<ul>
+<li><a href="http://linuxcommand.org/index.php">Linux Command</a></li>
+<li><a href="http://ryanstutorials.net/linuxtutorial/">Linux Tutorial</a></li>
+<li><a href="http://www.ibm.com/developerworks/linux/library/l-bash/index.html">Bash by Example</a></li>
+<li><a href="http://www.shell-fu.org/lister.php?top">Shell-Fu</a></li>
+<li><a href="http://explainshell.com/">Explain Shell</a></li>
+<li><a href="http://tools.kali.org/tools-listing">Kali Tools</a></li>
+</ul>
+<h2 id="networking-knowledge"><a name="user-content-networking-knowledge" href="#networking-knowledge" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Networking Knowledge</h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/TCP/IP_Illustrated">TCP/IP Illustrated</a></li>
+<li><a href="http://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html">IP Addressing and Subnetting for New Users</a></li>
+</ul>
+<h2 id="scripting-competency"><a name="user-content-scripting-competency" href="#scripting-competency" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Scripting Competency</h2>
+<ul>
+<li><a href="http://tldp.org/LDP/abs/html/">Bash</a></li>
+<li><a href="http://www.codecademy.com/en/tracks/ruby">Ruby</a></li>
+<li><a href="http://www.codecademy.com/en/tracks/python">Python</a></li>
+</ul>
+<h2 id="hardware-and-software-requirements"><a name="user-content-hardware-and-software-requirements" href="#hardware-and-software-requirements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hardware and software requirements</h2>
 <p>Your primary platform will be <a href="http://www.kali.org/downloads/">Kali Linux</a>.  You can use Kali as a native installation, in a virtual machine, or on a bootable usb.  If you are using a bootable usb ensure that you use it in persistence mode to ensure OS continuity.</p>
-<h1 id="schedule"><a name="user-content-schedule" href="#schedule" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Schedule</h1>
+<h1 id="schedule"><a name="user-content-schedule" href="#schedule" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Schedule</h1>
+<p>Guest Speakers will be announced during the term and dates may change.  </p>
 <table>
 <thead>
 <tr>
@@ -1113,139 +1212,91 @@ body .markdown-body
 <tr>
 <td>1.15.15</td>
 <td>Course Introduction</td>
-<td>Assignment 1</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Ethics Form</td>
 <td></td>
 </tr>
 <tr>
 <td>1.20.15</td>
+<td>Trust, Security Domains, Common Attacks</td>
+<td>Assignment 1</td>
 <td></td>
-<td>Assignment 2</td>
-<td>&mdash;</td>
 </tr>
 <tr>
 <td>1.22.15</td>
-<td>&mdash;</td>
-<td>&mdash;</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
+<td>Information Gathering</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>1.27.15</td>
-<td></td>
+<td>Vulnerability Analysis and Scanning</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>1.29.15</td>
-<td>&mdash;</td>
-<td>Assignment 3</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Exploitation</td>
+<td>Assignment 2</td>
 <td></td>
 </tr>
 <tr>
 <td>2.3.15</td>
-<td></td>
+<td>Post Exploitation, Persistence</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>2.5.15</td>
-<td>&mdash;</td>
+<td></td>
 <td>Practicum 1</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
 <td>2.10.15</td>
-<td></td>
+<td>Intro to Cryptosystems</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>2.12.15</td>
-<td>&mdash;</td>
-<td>Assignment 4</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>CypherPunks and Hacker Culture</td>
+<td>Assignment 3</td>
 <td></td>
 </tr>
 <tr>
 <td>2.17.15</td>
-<td></td>
+<td>Weaponized Scripting - Python</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>2.19.15</td>
-<td>&mdash;</td>
-<td>Assignment 5</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Weaponized Scripting - Powershell</td>
+<td>Assignment 4</td>
 <td></td>
 </tr>
 <tr>
 <td>2.24.15</td>
-<td></td>
+<td>Intro to Reverse Engineering</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>2.26.15</td>
-<td>&mdash;</td>
-<td>Assignment 6</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Olly, Ida, and Immunity</td>
+<td>Assignment 5</td>
 <td></td>
 </tr>
 <tr>
 <td>3.3.15</td>
-<td></td>
+<td>Practice questions and Review</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>3.5.15</td>
-<td>&mdash;</td>
+<td></td>
 <td>Practicum 2</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
@@ -1261,134 +1312,86 @@ body .markdown-body
 <td></td>
 </tr>
 <tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
 <td>3.17.15</td>
-<td></td>
+<td>Report Writing</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>3.19.15</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
+<td>Web Application Security Overview &amp; Guest Speaker</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>3.24.15</td>
-<td></td>
+<td>Web Applications - Vulnerability Scanning</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>3.26.15</td>
-<td>&mdash;</td>
-<td>Assignment 7</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Web Applications - Exploitation</td>
+<td>Assignment 6</td>
 <td></td>
 </tr>
 <tr>
 <td>3.31.15</td>
-<td></td>
+<td>Understanding the Network</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.2.15</td>
-<td>&mdash;</td>
-<td>Assignment 8</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Network - Attacks</td>
+<td>Assignment 7</td>
 <td></td>
 </tr>
 <tr>
 <td>4.7.15</td>
-<td></td>
+<td>Network - Defenders View</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.9.15</td>
-<td>&mdash;</td>
-<td>Assignment 9</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Network - File Carving</td>
+<td>Assignment 8</td>
 <td></td>
 </tr>
 <tr>
 <td>4.14.15</td>
-<td></td>
+<td>Computer Forensics</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.16.15</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
+<td>Forensics - Acquisition</td>
+<td>Assignment 9</td>
 <td></td>
 </tr>
 <tr>
 <td>4.21.15</td>
-<td></td>
+<td>Forensics - Analysis</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.23.15</td>
-<td>&mdash;</td>
+<td>Forensics - Network</td>
 <td>Assignment 10</td>
-<td>&mdash;</td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.28.15</td>
-<td></td>
+<td>Review</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4.30.15</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td></td>
+<td>Practice Practicum</td>
 <td></td>
 <td></td>
 </tr>
@@ -1396,7 +1399,7 @@ body .markdown-body
 <td>5.4.15</td>
 <td><strong>Finals Week</strong></td>
 <td>Practicum 3</td>
-<td>&mdash;</td>
+<td></td>
 </tr>
 <tr>
 <td>5.8.15</td>
@@ -1405,4 +1408,5 @@ body .markdown-body
 <td></td>
 </tr>
 </tbody>
-</table></article></body></html>
+</table>
+<p>CC-BY-NC-SA: Attribution Noncommercial Share Alike</p></article></body></html>

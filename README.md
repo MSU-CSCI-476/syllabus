@@ -5,7 +5,7 @@ Introductory to computer security. Covers security issues in software design and
 
 **Course Location:**	[unknown]
 
-**Course Instructor:**	Eric Fulton. Office Hours: Wednesday immediate after class until 5pm
+**Course Instructor:**	Eric Fulton. Office Hours: Thursday immediate after class until 5pm
 
 **Prerequisites:**	CSCI 232
 
@@ -14,15 +14,44 @@ Introductory to computer security. Covers security issues in software design and
 **Required Textbook:**	None
 
 ## Goals
-aaa
+The overarching goals fo the class are:
+
+1. Understand the many different aspects of information security.
+1. Develop Skills for: researching security issues, learning new tools, developing new tools, and more.
+1. Practice offensive security techniques.
+1. Acquire basic knowledge of various information security topics.  
+1. 
+1. Question and evaluate information presented 
+
+By the end of the class, you will have acquited the following skills: 
+
+1. Perform a penetration test from beginning to end
+1. Discuss and describe basic hacking techniques
+1. Identify and recongnize exploitable situations and logically attempt to exploit flaws
+1. Write a report on 
+1. Formulate and execute an independent project to examine in depth a topic on coastal contaminants
+1. Write a research paper containing novel data analysis
+1. Present orally the results of an independent project
+1. Translate and restate scientific results presented in peer-reviewed journals
+
 
 ## Topics to be covered
+* Hacking
+	* Trust, Security Domains, Common Attacks
+	* Information Gathering
+	* Vulnerability Analysis and Scanning
+	* Exploitation
+	* Post-Exploitation and Persistence
 * Applied cryptography
 	* Goals of Crypto
 	* Stream Cyphers
 	* Block Cyphers
 	* Asymmetric Crypto
 	* Authentication/Integrity
+* Hacker Culture
+* Reverse Engineering
+* Web Application Security
+	* OWASP Top 10
 * System Security
 	* Control Flow Hijacking
 	* Execution Safefy
@@ -31,34 +60,36 @@ aaa
 	* Security Architectures
 	* Exploitation
 * Network Security
-	* Scanning, firewalls, and vuln scanning 
+	* Scanning, firewalls, and vulnerability scanning 
 	* Denial of Service
 	* Intrusion Detection
 	* Network analysis
-* Web Application Security
-	* OWASP Top 10
-* Hacker Culture
 
 # Grading and Policies
 ## Grading
 The following grade scale will be used, after any curving takes place, based on class average as follows:
 
-89.5 - 100: A
-79.5 - 89.4: B
-69.5 - 79.4: C
-59.5 - 69.4: D
-< 59.5: F
+Percentage | Grade
+--- | ---
+89.5 - 100: | A
+79.5 - 89.4: | B
+69.5 - 79.4: | C
+59.5 - 69.4: | D
+< 59.5: | F
 
 ## Graded Items
-* Practicum 1 - %15
-* Practicum 2 - %15
-* Practicum 3 - %20
-* Assignments - %50 (%5 each)
 
-Late homework is not accepted, as staff cannot hand out solutions or graded assignements until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  
+Item | Percentage of Grade
+--- | ---
+Practicum 1 | %15
+Practicum 2 | %15
+Practicum 3 | %20
+Assignments | %50 (5 percent each)
+
+Late homework is not accepted as staff cannot hand out solutions or graded assignments until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  
 
 ## Homework Style Guide
-All written homework assignments are to be written in the [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax).  
+All written homework assignments are to be written in the [Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/).  
 
 ## Policies
 
@@ -71,6 +102,7 @@ When it comes to homework assignments, you _MAY_:
 * Work with other people on your team if allowed. 
 * Share ideas with people in other teams
 * Help other teams troubleshoot problems.
+* Use the power of the Internet
 
 You _MAY NOT_:
 
@@ -80,97 +112,78 @@ You _MAY NOT_:
 
 Failure to abide by these rules will result in at "F" for the course and being reported to the Dean of Students.  Please ask if you have any questions regarding your actions. In particular:
 
-* Don't break laws or University rules. Examples of prohibited activities include network scanning, network exploitation, "testing" the security of a system without explicit permission from all necessary parties, etc.
+* Don't break University rules or laws. Examples of prohibited activities include network scanning, network exploitation, "testing" the security of a system without explicit permission from all necessary parties, etc.
 * Don't attempt to hack the University.  You won't realize you're being watched until you're being sent to jail.
 
-# General Course Materials
+# General Course Knowledge Requirements
 There are some basic competencies necessary to be successful in this course.  By no means must you be an expert in the following topics, but it would be useful to have a general familiarity.  A weekend review of the following topics will give you the basic tools to necessary to succeed.  
 
 ## Basic Computer Systems
 
-[Simple CPU](http://www.simplecpu.com/Binary.html)
+* [Simple CPU](http://www.simplecpu.com/Binary.html)
 
 ## *Nix Knowledge
-Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following tools:
+Linux is the most typically used *nix operating system in use today and will be the foundational tool for CSCI 476.  A familiarity with the Bash shell and Linux utilities can be gained from the following resources:
 
-[Linux Command](http://linuxcommand.org/index.php)
-[Linux Tutorial](http://ryanstutorials.net/linuxtutorial/)
-[Bash by Example](http://www.ibm.com/developerworks/linux/library/l-bash/index.html)
-[Shell-Fu](http://www.shell-fu.org/lister.php?top)
-[Explain Shell](http://explainshell.com/)
+* [Linux Command](http://linuxcommand.org/index.php)
+* [Linux Tutorial](http://ryanstutorials.net/linuxtutorial/)
+* [Bash by Example](http://www.ibm.com/developerworks/linux/library/l-bash/index.html)
+* [Shell-Fu](http://www.shell-fu.org/lister.php?top)
+* [Explain Shell](http://explainshell.com/)
+* [Kali Tools](http://tools.kali.org/tools-listing)
 
 ## Networking Knowledge
 
-[TCP/IP Illustrated](http://en.wikipedia.org/wiki/TCP/IP_Illustrated)
-[IP Addressing and Subnetting for New Users](http://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
+* [TCP/IP Illustrated](http://en.wikipedia.org/wiki/TCP/IP_Illustrated)
+* [IP Addressing and Subnetting for New Users](http://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
 	
 ## Scripting Competency
 
-[Bash](http://tldp.org/LDP/abs/html/)
-[Ruby](http://www.codecademy.com/en/tracks/ruby)
-[Python](http://www.codecademy.com/en/tracks/python)
+* [Bash](http://tldp.org/LDP/abs/html/)
+* [Ruby](http://www.codecademy.com/en/tracks/ruby)
+* [Python](http://www.codecademy.com/en/tracks/python)
 
 ## Hardware and software requirements
 Your primary platform will be [Kali Linux](http://www.kali.org/downloads/).  You can use Kali as a native installation, in a virtual machine, or on a bootable usb.  If you are using a bootable usb ensure that you use it in persistence mode to ensure OS continuity.
 
-
-
 # Schedule 
+Guest Speakers will be announced during the term and dates may change.  
+
 Date | Topic | Graded Events | Extra Reading
 --- | --- | --- | ---
-1.15.15 | Course Introduction | Assignment 1 | ---
-1.20.15 |  |  Assignment 2 | ---
-1.22.15 | --- | --- | ---
-1.27.15 |
-1.29.15 | --- |  Assignment 3 | ---
-2.3.15 |
-2.5.15 | --- |  Practicum 1 | ---
-2.10.15 |
-2.12.15 | --- |  Assignment 4 | ---
-2.17.15 |
-2.19.15 | --- |  Assignment 5 | ---
-2.24.15 |
-2.26.15 | --- |  Assignment 6 | ---
-3.3.15 |
-3.5.15 | --- |  Practicum 2 | ---
+1.15.15 | Course Introduction | Ethics Form |  
+1.20.15 | Trust, Security Domains, Common Attacks |  Assignment 1 |  
+1.22.15 | Information Gathering |   | 
+1.27.15 | Vulnerability Analysis and Scanning |   |  
+1.29.15 | Exploitation |  Assignment 2 |  
+2.3.15 | Post Exploitation, Persistence | | 
+2.5.15 |  |  Practicum 1 |  
+2.10.15 | Intro to Cryptosystems | |
+2.12.15 | CypherPunks and Hacker Culture |  Assignment 3 |  
+2.17.15 | Weaponized Scripting - Python | | 
+2.19.15 | Weaponized Scripting - Powershell |  Assignment 4 |  
+2.24.15 | Intro to Reverse Engineering | |
+2.26.15 | Olly, Ida, and Immunity |  Assignment 5 |  
+3.3.15 | Practice questions and Review | |
+3.5.15 |   |  Practicum 2 |  
 3.10.15 | **Spring Break**
 3.12.15 | **Spring Break**
-3.17.15 |
-3.19.15 |
-3.24.15 |
-3.26.15 | --- |  Assignment 7 | ---
-3.31.15 |
-4.2.15 | --- |  Assignment 8 | ---
-4.7.15 |
-4.9.15 | --- |  Assignment 9 | ---
-4.14.15 |
-4.16.15 |
-4.21.15 |
-4.23.15 | --- |  Assignment 10 | ---
-4.28.15 |
-4.30.15 |
-5.4.15 | **Finals Week** |  Practicum 3 | ---
+3.17.15 | Report Writing | |
+3.19.15 | Web Application Security Overview & Guest Speaker |  |
+3.24.15 | Web Applications - Vulnerability Scanning | | 
+3.26.15 | Web Applications - Exploitation |  Assignment 6 |  
+3.31.15 | Understanding the Network
+4.2.15 | Network - Attacks |  Assignment 7 |  
+4.7.15 | Network - Defenders View
+4.9.15 | Network - File Carving |  Assignment 8 |  
+4.14.15 | Computer Forensics 
+4.16.15 | Forensics - Acquisition  |  Assignment 9 |  
+4.21.15 | Forensics - Analysis
+4.23.15 | Forensics - Network |  Assignment 10 |  
+4.28.15 | Review
+4.30.15 | Practice Practicum
+5.4.15 | **Finals Week** |  Practicum 3 |  
 5.8.15 | **Spring Semester Ends**
 
-
-# Misc Resources
-* [CTF Field Guide](https://trailofbits.github.io/ctf/)
-* [CTF Time](https://ctftime.org/)
-* [Windows Security Defenses](http://msdn.microsoft.com/en-us/library/bb430720.aspx)
-* [Common Network Attacks](http://technet.microsoft.com/en-us/library/cc959354.aspx)
-* [PicoCTF Learning Materials](https://picoctf.com/learn)
-* [DGuido's Videos](http://vimeo.com/dguido)
-
-
-## Reverse Engineering
-* [Xeno Kovah's Introductory Intel x86](http://opensecuritytraining.info/IntroX86.html)
-* [Xeno Kovah's Intermediate Intel x86](http://opensecuritytraining.info/IntermediateX86.html)
-* [Xeno Kovah's The Life of Binaries](http://opensecuritytraining.info/LifeOfBinaries.html)
-* [Binary Auditing Games](http://www.binary-auditing.com/)
-* [SEED Developing Labs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
-* [Open Training Info](http://opensecuritytraining.info/Training.html)
-
-
-
-
+CC-BY-NC-SA: Attribution Noncommercial Share Alike
 
