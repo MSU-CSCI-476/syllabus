@@ -89,7 +89,7 @@ Assignments | %50 (5 percent each)
 Late homework is not accepted as staff cannot hand out solutions or graded assignments until everyone has turned in their work.  Only in emergency or exceptional circumstances, such as a funeral or hospitalization, is late work accepted.  Personal scheduling issues like interviews, technology problems, etc. are not allowed as homework can be performed on any computer and can be submitted remotely.  
 
 ## Homework Style Guide
-All written homework assignments are to be written in the [Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/).  
+All written homework assignments are to be written in the [Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/) unless otherwise stated.  
 
 ## Policies
 
