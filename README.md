@@ -29,11 +29,10 @@ By the end of the class, you will have acquited the following skills:
 1. Perform a penetration test from beginning to end
 1. Discuss and describe basic hacking techniques
 1. Identify and recongnize exploitable situations and logically attempt to exploit flaws
-1. Write a report on 
-1. Formulate and execute an independent project to examine in depth a topic on coastal contaminants
-1. Write a research paper containing novel data analysis
+1. Write a report based on penetration testing findings suitable for a C-Level executive
+1. Formulate and execute an independent project to assist in automated testing
 1. Present orally the results of an independent project
-1. Translate and restate scientific results presented in peer-reviewed journals
+1. Translate and restate results presented in peer-reviewed journals (or hacking zines)
 
 
 ## Topics to be covered
