@@ -161,8 +161,7 @@ Date | Topic | Graded Events | Extra Reading
 2.10.15 | Intro to Cryptosystems | |
 2.12.15 | CypherPunks and Hacker Culture |  Assignment 3 |  
 2.17.15 | Weaponized Scripting - Python | | 
-2.19.15 | Weaponized Scripting - Powershell |  Assig
-nment 4 |  
+2.19.15 | Weaponized Scripting - Powershell |  Assignment 4 |  
 2.24.15 | Intro to Reverse Engineering | |
 2.26.15 | Olly, Ida, and Immunity |  Assignment 5 |  
 3.3.15 | Practice questions and Review | |
