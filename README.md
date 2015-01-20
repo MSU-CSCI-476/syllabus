@@ -5,7 +5,9 @@ Introductory to computer security. Covers security issues in software design and
 
 **Course Location:**	EPS 108	
 
-**Course Instructor:**	Eric Fulton. Office Hours: Thursday immediate after class until 5pm
+**Course Instructor:**	Eric Fulton. 
+
+**Office Hours:**	Thursday immediate after class until 5pm
 
 **Prerequisites:**	CSCI 232
 
