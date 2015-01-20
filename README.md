@@ -1,9 +1,9 @@
 # Course Overview 
 Introductory to computer security. Covers security issues in software design and development from technical, social and legal viewpoints. Topics include cryptography, security models, software security, authentication, authorization, and system security.
 
-**Course Time:**	Tuesday, Thursday 2:00pm-3:00pm
+**Course Time:**	Tuesday, Thursday 3:05pm-4:20pm
 
-**Course Location:**	[unknown]
+**Course Location:**	EPS 108	
 
 **Course Instructor:**	Eric Fulton. Office Hours: Thursday immediate after class until 5pm
 
@@ -20,7 +20,6 @@ The overarching goals fo the class are:
 1. Develop Skills for: researching security issues, learning new tools, developing new tools, and more.
 1. Practice offensive security techniques.
 1. Acquire basic knowledge of various information security topics.  
-1. 
 1. Question and evaluate information presented 
 
 By the end of the class, you will have acquited the following skills: 
@@ -161,7 +160,8 @@ Date | Topic | Graded Events | Extra Reading
 2.10.15 | Intro to Cryptosystems | |
 2.12.15 | CypherPunks and Hacker Culture |  Assignment 3 |  
 2.17.15 | Weaponized Scripting - Python | | 
-2.19.15 | Weaponized Scripting - Powershell |  Assignment 4 |  
+2.19.15 | Weaponized Scripting - Powershell |  Assig
+nment 4 |  
 2.24.15 | Intro to Reverse Engineering | |
 2.26.15 | Olly, Ida, and Immunity |  Assignment 5 |  
 3.3.15 | Practice questions and Review | |
@@ -177,9 +177,9 @@ Date | Topic | Graded Events | Extra Reading
 4.7.15 | Network - Defenders View
 4.9.15 | Network - File Carving |  Assignment 8 |  
 4.14.15 | Computer Forensics 
-4.16.15 | Forensics - Acquisition  |  Assignment 9 |  
-4.21.15 | Forensics - Analysis
-4.23.15 | Forensics - Network |  Assignment 10 |  
+4.16.15 | Forensics - Acquisition and Analysis |  Assignment 9 |  
+4.21.15 | Forensics - Network 
+4.23.15 | Catpure the Flag |  Assignment 10 |  
 4.28.15 | Review
 4.30.15 | Practice Practicum
 5.4.15 | **Finals Week** |  Practicum 3 |  
