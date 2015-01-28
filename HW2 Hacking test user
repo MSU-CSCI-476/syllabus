@@ -1,0 +1,8 @@
+Screenshot of hacking success is here: http://imgur.com/wcqp7Up
+
+I used Hydra to attack the server and ran through the fasttrack word list. I only used one thread to play it safe
+and not get kicked for too many failed logins. The code I used is:
+
+medusa -h 70.39.80.128 -u test -P '/usr/share/wordlists/fasttrack.txt' -M ssh -t 1
+
+I was successful on the 128th attempt with the password "changeme" and was able to get into the account.
